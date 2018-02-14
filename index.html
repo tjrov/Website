@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang='en'>
+    <!-- head -->
+    <head>
+        <title>TJROV</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <title>tjrov - Director</title>
+    </head>
+    <!-- body -->
+    <body style="font-family: Verdana">
+        <script>
+            var myFunction = function(){
+                var a = document.getElementById("myDropdownMobile");
+                if(!a.classList.contains("open"))
+                {
+                    a.classList.add("open");
+                    a.classList.remove("close");
+                }
+                else
+                {
+                    a.classList.remove("open");
+                    a.classList.add("close");
+                }
+            }
+        </script>
+            <div class="main">
+                <div class="bar" style="position:fixed; top:0">
+                <ul id="nav">
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li>
+                        <picture>
+                            <source media="(min-width: 100px)" srcset="logo.png">
+                            <a href="index.html"><img src="logo.png" alt="logo" style="width:auto; height: 40px"></a>
+                        </picture>
+                    </li>
+                    <li><a href="specs.html">Specs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+                <div class="title">
+                        <h1 class="maintop">TJROV</h1>
+                        <h1 class="secondtop">The official underwater ROV team of TJHSST</h1>
+                        <form>
+                        <input class="buttongo" type="button" value="Find out more" onclick="window.location.href='about.html'" />
+                        </form>
+                        <!--<button class="buttongo" href="about.html">Find out more</button>-->
+                </div>
+            </div>
+             <div class="mobile">
+                <div class = "topnav">
+                    <button id="button" onclick="myFunction()" style="width:40px; height:40px"></button>
+                </div>
+                <ul id="myDropdownMobile" class="topnav, close, dropbtn" style="background-color:black;">
+                    <li><a href="about.html" class="dropbtnStyle">About</a></li>
+                    <li><a href="news.html" class="dropbtnStyle">News</a></li>
+                    <li><a href="about.html" class="dropbtnStyle">Specs</a></li>
+                    <li><a href="contact.html" class="dropbtnStyle">Contact</a></li>
+                </ul>
+                <div class="title" style="z-index:0;">
+                    <h1 class="center" style="z-index:0;">TJROV</h1>
+                </div>
+            </div>
+            <div class="sub">
+                <p class="subhead">MISSION STATEMENT</p>
+                <p class="subtext">Our goal is to foster and develop the growth of STEM in our community through the construction and demonstration of underwater remotely operated vehicles.</p>
+            </div>
+            <div class="sub">
+                <p class="subhead">ABOUT THE TEAM</p>
+                <p class="subtext">We’re a team of 21 students from Thomas Jefferson High School for Science and Technology. We collaborate to expand the fields of engineering and marine biology, and we cooperate to cultivate the next generation of engineers. Although building a sophisticated ROV by hand isn’t the easiest task, our superb design and teamwork enable us to not only compete, but excel at the annual MATE international ROV competition.</p>
+            </div>
+            <div class="sub">
+                <p class="subhead">THE DETAILS</p>
+                <div class="more"><a href="#"> More>></a></div>
+                <p class="subtext">The Marine Advanced Technology Education (MATE) international underwater ROV competition pits some of the best aspiring engineers in the world against each other to build the ROV that can complete the most tasks in the least time. So then, what is an ROV? ROV stands for remotely operated vehicle, and they can be constructed to complete any number of tasks and are even being used right now to gather vital oceanic data. Underwater ROVs give scientists the tools they need to explore the ocean and monitor the environmental status of various marine ecosystems.</p>
+            </div>
+            <!--<div class="content">
+                <picture>
+                      <source media="(min-width: 100px)" srcset="" class = "imgpotate">
+                      <img src="" alt="" style="width:auto;" class = "imgpotate">
+                </picture>
+                <p style="color:white">placeholder</p>
+            </div>-->
+    </body>
+</html>
+

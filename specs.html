@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <title>TJROV</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="specs.css"/>
+        <title>tjrov - Director</title>
+    </head>
+    <body style="font-family: Verdana">
+        <script>
+            var myFunction = function(){
+                var a = document.getElementById("myDropdownMobile");
+                if(!a.classList.contains("open"))
+                {
+                    a.classList.add("open");
+                    a.classList.remove("close");
+                }
+                else
+                {
+                    a.classList.remove("open");
+                    a.classList.add("close");
+                }
+            }
+        </script>
+            <div class="main">
+                <div class="bar" style="position:fixed; top:0">
+                <ul id="nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li>
+                        <picture>
+                            <source media="(min-width: 100px)" srcset="logo.png">
+                            <a href="index.html"><img src="logo.png" alt="logo" style="width:auto; height: 40px"></a>
+                        </picture>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                </div>
+                <div>
+                <div class="specsimg1">
+                    <div class="specsheading">
+                        <span class="border">SPECIFICATIONS</span>
+                    </div>
+                </div>
+                <div class="specspara">
+                    <p>The specifications for our modern, powerful robot</p>
+                </div>
+                <div class="specsimg2">
+                    <div class="specsheading">
+                        <span class="border">POWERFUL MOTORS</span>
+                    </div>
+                </div>
+                <div class="specspara">
+                    <p>Our powerful motors keep us ahead of the competition.</p>
+                </div>
+                <div class="specsimg3">
+                    <div class="specsheading">
+                        <span class="border">EXCELLENT CAMERAS</span>
+                    </div>
+                </div>
+                <div class="specspara">
+                    <p>Our cameras let us know what's up.</p>
+                </div>
+            </div>
+            </div>
+            <div class="mobile">
+                <div class = "topnav">
+                    <button id="button" onclick="myFunction()" style="width:40px; height:40px"></button>
+                </div>
+                <ul id="myDropdownMobile" class="topnav, close, dropbtn" style="background-color:black;">
+                    <li><a href="index.html" class="dropbtnStyle">Home</a></li>
+                    <li><a href="news.html" class="dropbtnStyle">News</a></li>
+                    <li><a href="contact.html" class="dropbtnStyle">Contact</a></li>
+                    <li><a href="about.html" class="dropbtnStyle">About</a></li>
+                </ul>
+                <div>
+                    <p>SPECIFICATIONS</p>
+                    <p>The specifications for our powerful, modern robot.</p>
+                </div>
+            </div>
+            
+    </body>
+</html>
+

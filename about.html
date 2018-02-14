@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <title>TJROV</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>tjrov - Director</title>
+    </head>
+    <body style="font-family: Verdana">
+        <script>
+            var myFunction = function(){
+                var a = document.getElementById("myDropdownMobile");
+                if(!a.classList.contains("open"))
+                {
+                    a.classList.add("open");
+                    a.classList.remove("close");
+                }
+                else
+                {
+                    a.classList.remove("open");
+                    a.classList.add("close");
+                }
+            }
+        </script>
+            <div class="bar" style="position:fixed; top:0">
+                <ul id="nav">
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li>
+                        <picture>
+                            <source media="(min-width: 100px)" srcset="logo.png">
+                            <a href="index.html"><img src="logo.png" alt="logo" style="width:auto; height: 40px"></a>
+                        </picture>
+                    </li>
+                    <li><a href="specs.html">Specs</a></li><!--need to make specs page-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+            <div class="mobile">
+                <button onclick="myFunction()" style="width:40px; height:40px"></button>
+                <ul id="myDropdownMobile" class="topnav, close, dropbtn" style="background-color:black;">
+                    <li><a href="index.html" class="dropbtnStyle">Home</a></li>
+                    <li><a href="news.html" class="dropbtnStyle">News</a></li>
+                    <li><a href="contact.html" class="dropbtnStyle">Contact</a></li>
+                    <li><a href="about.html" class="dropbtnStyle">About</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <p>placeholder</p>
+            </div>
+    </body>
+</html>
+
